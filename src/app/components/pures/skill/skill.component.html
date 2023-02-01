@@ -1,0 +1,8 @@
+<div class="container-skill d-flex flex-column justify-content-center my-1 mx-1 align-items-center container bg-dark" *ngFor="let skill of front">
+  <div class="skill-title w-100 text-center pb-2">
+    {{ skill.name }}
+  </div>
+  <div class="skill-content w-100 text-center pb-2">
+    <img class="skill-image" src="{{ skill.icon }}" />
+  </div>
+</div>

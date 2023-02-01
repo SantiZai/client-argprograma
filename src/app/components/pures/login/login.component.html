@@ -1,0 +1,44 @@
+<div class="container container-all justify-content-center">
+  <div class="container w-75 my-5 text-center">
+    <img src="../../../../assets/Humaaans - Sitting.png" />
+  </div>
+  <div class="container-fluid container-form my-5">
+    <h1 class="text-center text-secondary mb-5">Contact me</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)" class="container w-50">
+      <div class="form-group">
+        <label for="name" class="form-label text-primary">Your name and lastname</label>
+        <input type="text" class="form-control bg-secondary" formControlName="name" placeholder="What's your name?" />
+      </div>
+      <div *ngIf="Name?.errors && Name?.touched">
+        <p class="text-danger" *ngIf="Name?.hasError('required')">
+          El nombre es requerido
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label text-primary">Email address</label>
+        <input type="email" class="form-control bg-secondary" formControlName="email" placeholder="Email to contact" />
+      </div>
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p class="text-danger" *ngIf="Email?.hasError('required')">
+          El email es requerido.
+        </p>
+        <p class="text-danger" *ngIf="Email?.hasError('email')">
+          El formato del email debe ser válido.
+        </p>
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label text-primary">Your message</label>
+        <input type="text" class="form-control bg-secondary" formControlName="message" ng-minlength="10" placeholder="Insert a message" />
+      </div>
+      <div *ngIf="Message?.errors && Message?.touched">
+        <p class="text-danger" *ngIf="Message?.hasError('required')">
+          El Mensaje es requerido.
+        </p>
+        <p class="text-danger" *ngIf="Message?.hasError('minlength')">
+          El mensaje debe tener como mínimo 10 carácteres
+        </p>
+      </div>
+      <button type="submit" [disabled]="!form.valid" class="btn btn-outline-primary btn-block mt-2">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.container-skill {
+  width: 150px;
+  height: 150px;
+  border-radius: 7px;
+}
+
+.skill-image {
+  width: 80px;
+  height: 80px;
+}

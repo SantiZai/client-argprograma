@@ -1,0 +1,34 @@
+[
+  {
+    "name": "HTML",
+    "icon": "../assets/html.svg"
+  },
+  {
+    "name": "CSS",
+    "icon": "../assets/css3.svg"
+  },
+  {
+    "name": "Sass",
+    "icon": "../assets/sass.svg"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "../assets/javascript.svg"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "../assets/typescript.svg"
+  },
+  {
+    "name": "React",
+    "icon": "../assets/react.svg"
+  },
+  {
+    "name": "Angular",
+    "icon": "../assets/angular.svg"
+  },
+  {
+    "name": "Astro",
+    "icon": "../assets/astro.svg"
+  }
+]

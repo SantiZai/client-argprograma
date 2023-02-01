@@ -1,0 +1,13 @@
+.container-all {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-all {
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
